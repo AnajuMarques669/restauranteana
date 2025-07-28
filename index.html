@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurante Italiano - Home</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body data-category="home">
+  <header class="topbar">
+    <div class="container">
+      <h1 class="logo">Ana´s Restaurant</h1>
+      <button id="btn-theme" class="btn-theme" aria-label="Alternar tema">Tema</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="classicos.html">Clássicos</a></li>
+          <li><a href="sobremesas.html">Sobremesas</a></li>
+          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider">
+  <div class="slides">
+    <div class="slide active">
+      <img src="IMG/ban2.jpg" alt="Pizza Margherita">
+      <div class="slide-text">
+        <h2>Sabor Autêntico Italiano</h2>
+        <p>Delicie-se com nossas pizzas artesanais.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="IMG/ban1.jpg" alt="Lasanha Bolonhesa">
+      <div class="slide-text">
+        <h2>Lasanhas Recheadas</h2>
+        <p>Com molho bolonhesa e parmesão fresco.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="IMG/ban3.jpg" alt="Tiramisu">
+      <div class="slide-text">
+        <h2>Sobremesas Irresistíveis</h2>
+        <p>Tiramisù e panna cotta feitos na hora.</p>
+      </div>
+    </div>
+  </div>
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</section>
+
+
+    <!-- Destaques -->
+    <section class="section destaque">
+      <div class="container">
+        <h2>Pratos em Destaque</h2>
+        <div id="grid-cardapio" class="grid-cardapio"></div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="section galeria">
+      <div class="container">
+        <h2>Galeria</h2>
+        <div class="grid-galeria">
+          <img src="IMG/class7.jpg" alt="Pizza Margherita">
+          <img src="IMG/class1.jpg" alt="Lasanha Bolonhesa">
+          <img src="IMG/bebi5.jpg" alt="Gnocchi ao Sugo">
+          <img src="IMG/sobre9.jpg" alt="Tiramisù">
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section depoimentos">
+      <div class="container">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="grid-depoimentos">
+          <blockquote>"A melhor pizza que já comi na vida! – <strong>Maria S.</strong>"</blockquote>
+          <blockquote>"Sobremesas incríveis, recomendo o tiramisù. – <strong>João P.</strong>"</blockquote>
+          <blockquote>"Ambiente acolhedor e comida deliciosa. – <strong>Ana L.</strong>"</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section contato-home">
+      <div class="container">
+        <h2>Visite-nos</h2>
+        <p>Rua da Itália, 123 – São Paulo – SP</p>
+        <p>Horário: Seg-Sex 11h às 23h • Sáb-Dom 12h às 00h</p>
+       
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal (para pratos em destaque) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" class="modal-close" aria-label="Fechar modal">✕</button>
+      <img id="modal-img" src="" alt="" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-price" class="price"></p>
+    </div>
+    <div id="modal-backdrop" class="modal-backdrop"></div>
+  </div>
+  <section class="section reservar">
+  <div class="container">
+    <h2>Reserve Sua Mesa</h2>
+    
+     </div>
+      <div class="container">
+    <a class="btn btn-reservar" href="https://wa.me/5511999999999?text=Olá,%20quero%20reservar%20uma%20mesa!" target="_blank">
+      Reservar Agora
+    </a>
+  </div>
+</section>
+
+
+  <!-- Botão WhatsApp fixo -->
+  <a href="https://wa.me/5511999999999?text=Olá,%20quero%20fazer%20um%20pedido!"
+     class="whatsapp-btn" target="_blank" aria-label="Falar no WhatsApp">
+    WhatsApp
+  </a>
+
+  <footer class="footer">
+    <p>&copy; 2025 Restaurante Italiano. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

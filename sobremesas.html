@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobremesas Italianas</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body data-category="sobremesas">
+  <header class="topbar">
+    <div class="container">
+      <h1 class="logo">Menu Italiano</h1>
+     <button id="btn-theme" class="btn-theme" aria-label="Alternar tema">Tema</button>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="classicos.html">Clássicos</a></li>
+          <li><a href="sobremesas.html" class="active">Sobremesas</a></li>
+          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+        <button id="hamburger" class="hamburger" aria-label="Abrir menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Sobremesas</h2>
+
+      <div class="search-bar">
+        <input id="search" type="text" placeholder="Buscar por nome ou descrição..." aria-label="Buscar no cardápio" />
+      </div>
+
+      <div id="grid-cardapio" class="grid-cardapio"></div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Fechar modal">✕</button>
+      <img id="modal-img" src="" alt="" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p id="modal-price" class="price"></p>
+    </div>
+    <div id="modal-backdrop" class="modal-backdrop"></div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Restaurante Italiano. Todos os direitos reservados.</p>
+  </footer>
+  <a href="https://wa.me/5511999999999?text=Olá%20quero%20fazer%20um%20pedido!"
+   class="whatsapp-btn" target="_blank" aria-label="Falar no WhatsApp">
+  <span>WhatsApp</span>
+</a>
+
+</body>
+</html>
